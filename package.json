@@ -1,0 +1,39 @@
+{
+"name": "use-time-machine",
+  "version": "1.0.0",
+  "description": "A zero-dependency, ultra-lightweight React hook for Gmail-style optimistic UI and undo actions.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "react",
+    "undo",
+    "optimistic-ui",
+    "toast",
+    "nextjs"
+  ],
+  "author": "Prabhat Singh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prabhattopi/use-time-machine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prabhattopi/use-time-machine/issues"
+  },
+  "homepage": "https://github.com/prabhattopi/use-time-machine#readme",
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "react": "^19.2.4",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.2"
+  }
+}
