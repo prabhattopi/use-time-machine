@@ -1,8 +1,8 @@
-# use-time-machine ⏳
+# use-time-machine-hook ⏳
 
 A zero-dependency, ultra-lightweight React hook for Gmail-style optimistic UI and undo actions.
 
-Adding delayed, cancellable actions to a React app usually requires messy `setTimeout` cleanup, state management, and complex promise handling. `use-time-machine` abstracts all of that into a single, perfectly typed hook with an optional beautiful UI toast.
+Adding delayed, cancellable actions to a React app usually requires messy `setTimeout` cleanup, state management, and complex promise handling. `use-time-machine-hook` abstracts all of that into a single, perfectly typed hook with an optional beautiful UI toast.
 
 ## ✨ Features
 - **⚡️ Zero Dependencies:** Microscopic bundle size.
@@ -13,7 +13,7 @@ Adding delayed, cancellable actions to a React app usually requires messy `setTi
 ## 📦 Installation
 
 ```bash
-npm install use-time-machine
+npm install use-time-machine-hook
 ```
 
 ## 🚀 Quick Start (With Included UI)
@@ -21,7 +21,7 @@ Drop the hook and the TimeMachineToast into any component to instantly add cance
 
 ```
 import { useState } from 'react';
-import { useTimeMachine, TimeMachineToast } from 'use-time-machine';
+import { useTimeMachine, TimeMachineToast } from 'use-time-machine-hook';
 
 export default function App() {
   const [users, setUsers] = useState([{ id: 1, name: 'Alice' }, { id: 2, name: 'Bob' }]);
@@ -86,7 +86,7 @@ You can easily override our default inline styles by passing a className or styl
 If you are using a library like Shadcn, Material UI, or just want to build your own component, you can ignore our Toast completely. Just use the states returned from the hook!
 
 ```
-import { useTimeMachine } from 'use-time-machine';
+import { useTimeMachine } from 'use-time-machine-hook';
 
 export default function CustomApp() {
   const { execute, undo, isPending, timeLeft } = useTimeMachine({

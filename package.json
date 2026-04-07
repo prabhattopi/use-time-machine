@@ -1,6 +1,6 @@
 {
-"name": "use-time-machine",
-  "version": "1.0.0",
+"name": "use-time-machine-hook",
+  "version": "1.0.1",
   "description": "A zero-dependency, ultra-lightweight React hook for Gmail-style optimistic UI and undo actions.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
